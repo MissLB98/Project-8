@@ -9,30 +9,30 @@
     <title>Accessible Frog</title>
   </head>
 
-  <body>
-    <div class="main-nav">
+  <body role="application">
+    <nav class="main-nav" role="navigation">
       <ul class="nav">
         <li class="name"><a href="index.html">Accessible Frog</a></li>
         <li><a href="tour.html">Tour</a></li>
         <li><a href="#">Survey</a></li>
       </ul>
-    </div>
+    </nav>
 
     <header>
 		<h1 class="tag name">Accessible Frog</h1>
 		<h2 class="tagline">we make awesome music</h2>
     </header>
 
-    <main>
+    <main role="main">
       <h1>Survey</h1>
       <div class="card">
         <div class="flex">
           <img class="photo" src= "img/concert01.jpg" alt="Image of a concert 1">
           <div class="container">
             <form class = "survey">
-				<fieldset>
-					<legend>Please answer these questions:</legend>
-					<h2>Who is your favorite band member:</h2>
+				<fieldset class="radio-input">
+					<legend><h2>Who is your favorite band member:</h2></legend>
+					
 					<label for="john"><input id="john" type="radio" name="res" value="John"> John</label>
 			  
 					<label for="hazzard"><input id="hazzard" type="radio" name="res" value="Hazzard"> Hazzard</label>
@@ -40,24 +40,28 @@
 					<label for="bob"><input id="bob" type="radio" name="res" value="Bob"> Bob</label>
 			  
 					<label for="sally"><input id="sally" type="radio" name="res" value="Sally"> Sally</label>
+				</fieldset>
 
-					<label for="albums"><h2>What is your favorite album:</h2></label>
+				<fieldset>
+					<label for="albums"><h2>What is your favorite album:</h2></</label><br/>
 					<select id="albums" name="select">
-						<option value="2">A Day Of Old</option>
-						<option value="4">Diamond Fireworks</option>
-						<option value="5">Enjoy Your Desire</option>
-						<option value="3">Finding My Shadow</option>
-						<option value="9">Heroic Forever</option>
-						<option value="10">Midnight Fires</option>
+						<option value="1">A Day Of Old</option>
+						<option value="2">Diamond Fireworks</option>
+						<option value="3">Enjoy Your Desire</option>
+						<option value="4">Finding My Shadow</option>
+						<option value="5">Heroic Forever</option>
+						<option value="6">Midnight Fires</option>
 						<option value="7">Music Of My Life</option>
-						<option value="1">Party For An Angel</option>
-						<option value="8">Song For Yesterday</option>
-						<option value="11">Street Of The Rider</option>
-						<option value="6">This Is For You</option>
+						<option value="8">Party For An Angel</option>
+						<option value="9">Song For Yesterday</option>
+						<option value="10">Street Of The Rider</option>
+						<option value="11">This Is For You</option>
 					  </select>
-
-					<label for="textarea"><h2>What is your favorite song:</h2></label>
-					<textarea id="textarea"></textarea>
+				</fieldset>
+				
+				<fieldset>
+					<label for="textarea"><h2>What is your favorite song:</h2></label><br/>
+					<textarea id="textarea" name="favsong"></textarea>
 				</fieldset>
             </form>
           </div>
@@ -72,10 +76,15 @@
               <form class="newsletter">
 				<fieldset>
 					<legend>Subscribe to our newsletter:</legend>
+					
                   <label for="name">Name: <input id="name" type ="text" name="textfield"></label><br/>
+				  
                   <label for="email">Email: <input id="email" type ="email" name="textfield"></label><br/>
+				  
                   <label for="retype-email">Retype Email: <input id="retype-email" type ="email" name="textfield"></label><br/>
-                  <button type="submit">Sign Up</button>
+				  
+                  <button type="submit" aria-describedly="hint">Sign Up</button>
+				  <p id="hint">This button will sign you up for our newsletters. You should type your first name into the name field. Your email must contain the '@' symbol followed by the name of your email provider.</p>
 				</fieldset>
               </form>
             </div>
@@ -83,7 +92,7 @@
       </div>
     </main>
 
-    <footer>
+    <footer role="contentinfo">
       <ul>
         <li><a href="#" class="social twitter"><span>Twitter</span></a></li>
         <li><a href="#" class="social youtube"><span>YouTube</span></a></li>

@@ -1,5 +1,11 @@
 /* Survey page styles */
 
+h2	{
+	font-size: 1.3em;
+	padding: 1.5em 0;
+	margin: 2em 0 0 0;
+}
+
 .photo{
   width: 60%;
   padding: 10px;
@@ -11,8 +17,11 @@ form {
   display: inline-block;
 }
 
-.survey label	{
-	display: block;
+.radio-input label	{
+	display: inline-block;
+	border: 1px solid #aaa;
+	padding: 3px 10px;
+	margin: 5px;
 }
 
 input[type="radio"]:focus	{
@@ -35,6 +44,7 @@ textarea:focus,
 	outline: 3px solid #232323;
 }
 
+
 textarea	{
 	width: 200px;
 }
@@ -45,6 +55,8 @@ textarea:focus	{
 
 fieldset	{
 	border: none;
+	padding: 0;
+	margin: 0;
 }
 
 fieldset input	{
@@ -53,11 +65,17 @@ fieldset input	{
 }
 
 button	{
-	padding: 8px 25px;
-	border-radius: 8px;
-	margin: 10px auto;
+	padding: 8px;
+	border: 2px solid #000;
+	border-radius: 6px;
+	margin-left: auto;
+	margin-right: 15px;
+	margin-top: 15px;
 	width: 150px;
 	display: block;
+	font-size: 1.2em;
+	font-weight: bolder;
+	background: #fff;
 }
 
 button:focus	{
@@ -65,9 +83,14 @@ button:focus	{
 	color: #fff;
 }
 
+#hint	{
+	color: #aaa;
+}
+
 .container{
   text-align: center;
 }
+
 .newsletter{
   text-align: right;
 
