@@ -17,16 +17,16 @@ form {
   display: inline-block;
 }
 
+
 .radio-input label	{
 	display: inline-block;
 	border: 1px solid #aaa;
 	padding: 3px 10px;
-	margin: 5px;
+	margin: 15px;
 }
 
 input[type="radio"]:focus	{
 	outline: 4px solid #110;
-	ouline-offset: -2px;
 }
 
 input:focus,
@@ -44,6 +44,11 @@ textarea:focus,
 	outline: 3px solid #232323;
 }
 
+#albums,
+#textarea	{
+	margin: 20px 0;
+	padding: 8px 4px;
+}
 
 textarea	{
 	width: 200px;

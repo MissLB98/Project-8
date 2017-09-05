@@ -10,13 +10,13 @@
   </head>
 
   <body role="application">
-    <nav class="main-nav" role="navigation">
+    <div class="main-nav" role="navigation">
       <ul class="nav">
         <li class="name"><a href="index.html">Accessible Frog</a></li>
         <li><a href="tour.html">Tour</a></li>
         <li><a href="#">Survey</a></li>
       </ul>
-    </nav>
+    </div>
 
     <header>
 		<h1 class="tag name">Accessible Frog</h1>
@@ -31,7 +31,7 @@
           <div class="container">
             <form class = "survey">
 				<fieldset class="radio-input">
-					<legend><h2>Who is your favorite band member:</h2></legend>
+					<legend>Who is your favorite band member:</legend>
 					
 					<label for="john"><input id="john" type="radio" name="res" value="John"> John</label>
 			  
@@ -43,7 +43,7 @@
 				</fieldset>
 
 				<fieldset>
-					<label for="albums"><h2>What is your favorite album:</h2></</label><br/>
+					<label for="albums">What is your favorite album:</label><br/>
 					<select id="albums" name="select">
 						<option value="1">A Day Of Old</option>
 						<option value="2">Diamond Fireworks</option>
@@ -60,7 +60,7 @@
 				</fieldset>
 				
 				<fieldset>
-					<label for="textarea"><h2>What is your favorite song:</h2></label><br/>
+					<label for="textarea">What is your favorite song:</label><br/>
 					<textarea id="textarea" name="favsong"></textarea>
 				</fieldset>
             </form>
@@ -83,7 +83,7 @@
 				  
                   <label for="retype-email">Retype Email: <input id="retype-email" type ="email" name="textfield"></label><br/>
 				  
-                  <button type="submit" aria-describedly="hint">Sign Up</button>
+                  <button type="submit" aria-describedby="hint">Sign Up</button>
 				  <p id="hint">This button will sign you up for our newsletters. You should type your first name into the name field. Your email must contain the '@' symbol followed by the name of your email provider.</p>
 				</fieldset>
               </form>
