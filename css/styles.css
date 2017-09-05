@@ -80,7 +80,7 @@ header {
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
-  height: 350px;
+  height: 400px;
 }
 
 .tag {
@@ -90,7 +90,7 @@ header {
 }
 
 .name{
-  font-weight: 300;
+  font-weight: 500;
 }
 
 header .name{
@@ -98,12 +98,12 @@ header .name{
 }
 
 .tagline {
-  font-weight: 600;
+  font-weight: 500;
+  font-size: 1.5em;
   padding: 20px 10px;
   text-transform: uppercase;
-  color: #fee5c8;
-  text-shadow: -2px 3px 3px #333,
-				-3px -2px 4px #444;
+  color: #993434;
+  text-shadow: 2px 1px 1px #555;
 }
 
 .card {
@@ -207,13 +207,13 @@ a.social:hover {
     -ms-flex-pack: distribute;
   }
 
-  header {
-    min-height: 470px;
-  }
-
   .nav {
     max-width: 1200px;
     padding: 0 30px;
+  }
+  
+  header	{
+	  min-height: 470px;
   }
 
 
